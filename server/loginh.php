@@ -16,7 +16,7 @@ $key = $query->fetch(PDO::FETCH_ASSOC); // Fetch single result (not all)
 
 // Check if user exists
 if ($key) {
-    // Compare password directly (for now)
+    
     if ($password === $key['password']) {
         // Set session variables
         $_SESSION['userid'] = $key['userid'];
